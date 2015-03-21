@@ -11,6 +11,7 @@ date: '2011-06-01 01:31:37 -0400'
 date_gmt: '2011-06-01 05:31:37 -0400'
 tags: [startups]
 comments: []
+full_post_excerpt: true
 ---
 I have been reading some user experience books lately. While doing so, I came across this gem:
 
