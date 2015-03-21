@@ -10,6 +10,7 @@ url: "http://alanp.ca" # the base hostname & protocol for your site
 twitter_username: alanpca
 github_username:  alanpca
 permalink: pretty
+password: wompwomp # LOL just kidding
 
 # Build settings
 markdown: kramdown
