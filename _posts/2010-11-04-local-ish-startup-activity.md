@@ -19,6 +19,7 @@ tags:
 - november
 - entrepreneurship
 comments: []
+full_post_excerpt: true
 ---
 It seems that the Windsor/Metro Detroit area is finally getting some startup assistance love.
 
