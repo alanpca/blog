@@ -3,11 +3,6 @@ layout: post
 status: publish
 published: true
 title: Local(-ish) Startup Activity
-author:
-  display_name: alanp
-  login: admin
-  email: github@laudicina.net
-  url: ''
 author_login: admin
 author_email: github@laudicina.net
 wordpress_id: 205
@@ -25,10 +20,11 @@ tags:
 - entrepreneurship
 comments: []
 ---
-<p>It seems that the Windsor&#47;Metro Detroit area is finally getting some startup assistance love.</p>
-<p>No great incubator yet, but we do﻿ have a few upcoming events in the area:</p>
-<ul>
-<li><a href="http:&#47;&#47;www.startupdrinks.ca&#47;index.php&#47;windsor&#47;">Windsor Startup Drinks<&#47;a> wi﻿ll be taking place next week, November 10th, in downtown Windsor. &nbsp;It seems to be hosted by the <a href="http:&#47;&#47;www.softechalliance.ca&#47;">Softech Alliance<&#47;a> and <a href="http:&#47;&#47;sifewindsor.com&#47;">SIFE Windsor<&#47;a>.<&#47;li>
-<li><a href="http:&#47;&#47;detroit.startupweekend.org&#47;">Detroit Startup Weekend<&#47;a> will be held at <a href="http:&#47;&#47;techtownwsu.org&#47;">TechTown<&#47;a> at my alma mater, <a href="http:&#47;&#47;www.wayne.edu">Wayne State University<&#47;a>, next weekend (November 12th-14th, 2010).<&#47;li><br />
-<&#47;ul><br />
-This is a great chance for local startup-minded people to network and, as I like to say, increase their geek circle. &nbsp;If you are one of these people, get out there and get involved.</p>
+It seems that the Windsor/Metro Detroit area is finally getting some startup assistance love.
+
+No great incubator yet, but we do﻿ have a few upcoming events in the area:
+
+*   [Windsor Startup Drinks](http://www.startupdrinks.ca/index.php/windsor/) wi﻿ll be taking place next week, November 10th, in downtown Windsor. It seems to be hosted by the [Softech Alliance](http://www.softechalliance.ca/) and [SIFE Windsor](http://sifewindsor.com/).
+*   [Detroit Startup Weekend](http://detroit.startupweekend.org/) will be held at [TechTown](http://techtownwsu.org/) at my alma mater, [Wayne State University](http://www.wayne.edu), next weekend (November 12th-14th, 2010).
+
+This is a great chance for local startup-minded people to network and, as I like to say, increase their geek circle. If you are one of these people, get out there and get involved.

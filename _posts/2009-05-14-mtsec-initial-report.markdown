@@ -1,13 +1,8 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: MTSec Initial Report
-author:
-  display_name: alanp
-  login: admin
-  email: github@laudicina.net
-  url: ''
 author_login: admin
 author_email: github@laudicina.net
 excerpt: "I was asked by <a href=\"http:&#47;&#47;mavrinac.com&#47;\">Aaron Mavrinac<&#47;a>

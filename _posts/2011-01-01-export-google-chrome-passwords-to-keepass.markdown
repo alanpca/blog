@@ -3,11 +3,6 @@ layout: post
 status: publish
 published: true
 title: Export Google Chrome passwords to Keepass
-author:
-  display_name: alanp
-  login: admin
-  email: github@laudicina.net
-  url: ''
 author_login: admin
 author_email: github@laudicina.net
 wordpress_id: 211
@@ -53,7 +48,10 @@ comments:
   date_gmt: '2013-04-19 17:27:00 -0400'
   content: ":( didn't work for me..."
 ---
-<p>I have recently been complementing the power of <a href="http:&#47;&#47;keepass.info">Keepass<&#47;a> with <a href="http:&#47;&#47;www.dropbox.com">Dropbox<&#47;a>, which allows me to share and access my logins and passwords anywhere with an internet connection while still storing them in a secure manner. &nbsp;Thanks to the&nbsp;<a href="http:&#47;&#47;www.keepassdroid.com&#47;">KeepassDroid<&#47;a> application, this even includes my phone.</p>
-<p>Since I began using Keepass, I have been looking for a way to import those pesky web application passwords into Keepass. &nbsp;Since I have a different login and password for essentially every site I visit, managing and remembering these has been a huge problem in the past. With multiple hundreds of unique login&#47;password combinations, doing this by hand was not an option. &nbsp;This morning the problem came to a head and I decided to do something about it.</p>
-<p>Since Keepass allows importation from it's own XML format, the building blocks for an export&#47;import were already there. I have been learning Ruby lately, so I decided I would whip up a quick script to export my Chrome passwords.</p>
-<p>After a bit of hacking, I finished chrome2keepass this morning and you can find it at its <a href="https:&#47;&#47;github.com&#47;alanpca&#47;chrome2keepass">Github Repository<&#47;a>.</p>
+I have recently been complementing the power of [Keepass](http://keepass.info) with [Dropbox](http://www.dropbox.com), which allows me to share and access my logins and passwords anywhere with an internet connection while still storing them in a secure manner. Thanks to the [KeepassDroid](http://www.keepassdroid.com/) application, this even includes my phone.
+
+Since I began using Keepass, I have been looking for a way to import those pesky web application passwords into Keepass. Since I have a different login and password for essentially every site I visit, managing and remembering these has been a huge problem in the past. With multiple hundreds of unique login/password combinations, doing this by hand was not an option. This morning the problem came to a head and I decided to do something about it.
+
+Since Keepass allows importation from it's own XML format, the building blocks for an export/import were already there. I have been learning Ruby lately, so I decided I would whip up a quick script to export my Chrome passwords.
+
+After a bit of hacking, I finished chrome2keepass this morning and you can find it at its [Github Repository](https://github.com/alanpca/chrome2keepass).
