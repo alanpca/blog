@@ -5,14 +5,6 @@ published: true
 title: How To Get Accepted Into Google Summer Of Code (GSoC)
 author_login: admin
 author_email: github@laudicina.net
-excerpt: "There have been various discussions in both the GSoC mailing list and official
-  IRC channel regarding improving your chances of getting into GSoC.&nbsp; Since the
-  2009 process has already finished, I have these suggestions for 2010 students and
-  beyond:\r\n<ul>\r\n\t<li>Be active in the community.<&#47;li>\r\n\t<li>Write a good
-  proposal, submit it early.<&#47;li>\r\n\t<li>Subscribe to your update notifications
-  for your proposal.<&#47;li>\r\n\t<li>Update your proposal.<&#47;li>\r\n\t<li>Be
-  active in the community.<&#47;li>\r\n\t<li>Submit Patches.<&#47;li>\r\n<&#47;ul>\r\nLet's
-  break these criteria down further:\r\n"
 wordpress_id: 17
 wordpress_url: http://alanp.ca/blog/?p=17
 date: '2009-04-30 15:17:01 -0400'
