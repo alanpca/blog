@@ -18,7 +18,8 @@ layout: default
           {% if post.full_post_excerpt %}
             {{ post.content }}
           {% else %}
-            {{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.excerpt | strip_html }} <br/>
+            <a href="{{ post.url | prepend: site.baseurl }}">
               Read more...
             </a>
           {% endif %}
