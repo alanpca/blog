@@ -52,7 +52,7 @@ comments:
 
     you should take serious steps in not only identifying other potential backdoors or RAT, but also tighten the security on your server, starting with ensuring that absolutely no directory is writable, and your WordPress is up-to-date. There are known plug-in security holes, and your first line of response is robust, recent software.
 ---
-![](http://alanp.ca/blog/wp-content/uploads/2010/07/chomp.png "Chomp Chomp, Hackers be biting your computar.") Having experienced some 'weird' traffic the other day, a client contacted me regarding this problem. One of the datacenters we deal with contacted my client and sent him the following logs from an attack that seems to occured from his server:
+Having experienced some 'weird' traffic the other day, a client contacted me regarding this problem. One of the datacenters we deal with contacted my client and sent him the following logs from an attack that seems to occured from his server:
 
 ```apache
 access.log:xxx.xxx.xxx.xxx - - [01/Jul/2010:12:15:03 +0000] "GET /wp-login.php HTTP/1.1" 404 2533 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
