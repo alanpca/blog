@@ -11,6 +11,7 @@ permalink: :year/:month/:day/:title/
 password: wompwomp # LOL just kidding
 paginate: 2
 paginate_path: "pages/:num/"
+name: Alan P. Laudicina
 
 # Build settings
 markdown: kramdown
