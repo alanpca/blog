@@ -15,6 +15,7 @@ layout: default
         <article>
           {{ post.content }}
         </article>
+        <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Comments</a>
       </li>
     {% endfor %}
   </ul>
@@ -31,3 +32,5 @@ layout: default
   </div>
 
 </div>
+
+{% include disqus_count.html %}
