@@ -2,7 +2,7 @@
 title: alanp.ca
 tagline: thoughts on software development & startups
 email: contact@alanp.ca
-description:
+description: alanp.ca - thoughts on software development & startups
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://alanp.ca" # the base hostname & protocol for your site
 twitter_username: alanpca
