@@ -14,6 +14,25 @@
     position: relative;
 }
 
+.image-header {
+    position: relative;
+    z-index: 1;
+}
+
+#header-overlay {
+    position: absolute;
+    z-index: 2;
+    display: relative;
+    background-color: #2a7ae2;
+    width: 400px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 2em;
+    padding: .5em;
+    border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+}
+
 .site-title {
     font-size: 26px;
     line-height: 56px;
