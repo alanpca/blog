@@ -10,7 +10,7 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://alanp.ca" # the base hostname & protocol for your site
 twitter_username: alanpca
 github_username:  alanpca
-permalink: pretty
+permalink: :year/:month/:day/:title/
 password: wompwomp # LOL just kidding
 paginate: 2
 paginate_path: "pages/:num/"
