@@ -258,3 +258,26 @@
         }
     }
 }
+
+.pagination {
+    width: 100%;
+    text-align: center;
+    color: $grey-color-dark;
+    position: relative;
+
+    a, a:visited {
+        color: $grey-color-dark;
+    }
+
+    .older, .newer {
+        position: absolute;
+    }
+
+    .older {
+        right: 0;
+    }
+
+    .newer {
+        left: 0;
+    }
+}

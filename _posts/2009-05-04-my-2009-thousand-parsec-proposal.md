@@ -5,11 +5,6 @@ published: true
 title: My 2009 Thousand Parsec Proposal
 author_login: admin
 author_email: github@laudicina.net
-excerpt: "I mentioned previously that I would be posting my complete proposal to this
-  blog. Today, I have gone ahead with that and it is viewable in this post.&nbsp;
-  Throughout the summer as I become more acclimated to Thousand Parsec and the Google
-  Summer of Code process I will be posting regarding possible areas for improvement
-  for this proposal.\r\n"
 wordpress_id: 31
 wordpress_url: http://alanp.ca/blog/?p=31
 date: '2009-05-04 02:39:35 -0400'

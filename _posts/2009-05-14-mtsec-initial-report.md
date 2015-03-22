@@ -5,14 +5,6 @@ published: false
 title: MTSec Initial Report
 author_login: admin
 author_email: github@laudicina.net
-excerpt: "I was asked by <a href=\"http:&#47;&#47;mavrinac.com&#47;\">Aaron Mavrinac<&#47;a>
-  to write a report about what exactly MTSec currently does in the code - summary
-  of what the standard hooks are doing, list of orders, list of objects, etc.&nbsp;
-  For this report I focused mainly on the code itself, sort of the MTSec API as it
-  stands now.&nbsp; This means that I have read all of the MTSec code already and
-  have a good idea of what is happening within it.&nbsp; I plan to create a wiki page
-  within the Thousand Parsec Wiki for others to be able to update my work as they
-  see fit.&nbsp; Feel free to read my report on the MTSec game module source.\r\n"
 wordpress_id: 64
 wordpress_url: http://alanp.ca/blog/?p=64
 date: '2009-05-14 21:11:50 -0400'

@@ -12,6 +12,8 @@ twitter_username: alanpca
 github_username:  alanpca
 permalink: pretty
 password: wompwomp # LOL just kidding
+paginate: 2
+paginate_path: "pages/:num/"
 
 # Build settings
 markdown: kramdown
