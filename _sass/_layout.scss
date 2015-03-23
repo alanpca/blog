@@ -14,9 +14,18 @@
     position: relative;
 }
 
+.main-content {
+    float: right;
+}
+
+.sidebar-group {
+    margin-bottom: $spacing-unit;
+}
+
 .image-header {
     position: relative;
     z-index: 1;
+    margin-bottom: $spacing-unit;
 }
 
 #header-overlay {
@@ -124,9 +133,14 @@
 }
 
 .contact-list,
-.social-media-list {
+.copyright-list {
     list-style: none;
     margin-left: 0;
+}
+
+.copyright-list {
+    color: $grey-color;
+    font-size: $small-font-size;
 }
 
 .footer-col-wrapper {
@@ -263,6 +277,7 @@
     text-align: center;
     color: $grey-color-dark;
     position: relative;
+    margin-bottom: $spacing-unit;
 
     a, a:visited {
         color: $grey-color-dark;

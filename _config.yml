@@ -7,6 +7,8 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://alanp.ca" # the base hostname & protocol for your site
 twitter_username: alanpca
 github_username:  alanpca
+linkedin_base: http://ca.linkedin.com/in/
+linkedin_username: alanlaudicina
 permalink: :year/:month/:day/:title/
 password: wompwomp # LOL just kidding
 paginate: 2

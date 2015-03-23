@@ -1,7 +1,11 @@
+.highlighter-coderay {
+  overflow-x: auto;
+  margin-bottom: $spacing-unit / 2;
+}
+
 .CodeRay {
   background-color: hsl(0,0%,95%);
   color: black;
-  margin-bottom: 14px;
 }
 .CodeRay pre {
   margin: 0px;
@@ -34,7 +38,6 @@ table.CodeRay td { vertical-align: top; }
 .CodeRay .line-numbers .highlighted a { color: red !important; }
 .CodeRay span.line-numbers { padding: 0px 4px; }
 .CodeRay .line { display: block; float: left; width: 100%; }
-.CodeRay .code pre { width: 740px; }
 
 .CodeRay .debug { color: white !important; background: blue !important; }
 
