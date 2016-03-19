@@ -11,7 +11,7 @@ linkedin_base: http://ca.linkedin.com/in/
 linkedin_username: alanlaudicina
 permalink: :year/:month/:day/:title/
 password: wompwomp # LOL just kidding
-paginate: 2
+paginate: 3
 paginate_path: "pages/:num/"
 name: Alan P. Laudicina
 
